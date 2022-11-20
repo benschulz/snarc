@@ -1,6 +1,6 @@
 [package]
 name = "snarc"
-version = "0.1.0"
+version = "0.2.0-dev"
 authors = [ "Ben Schulz <benshu@benshu.de>" ]
 license = "MIT"
 readme = "README.md"
