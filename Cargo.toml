@@ -1,0 +1,25 @@
+[package]
+name = "snarc"
+version = "0.1.0"
+authors = [ "Ben Schulz <benshu@benshu.de>" ]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/benschulz/snarc"
+documentation = "https://docs.rs/snarc"
+homepage = "https://github.com/benschulz/snarc"
+description = "Sendable Non-Atomically Reference Counted"
+categories = [ "asynchronous", "concurrency", "data-structures", "rust-patterns" ]
+exclude = []
+edition = "2021"
+
+[features]
+thread-local = [ "thread_local" ]
+default = []
+
+[dependencies]
+scopeguard = "1"
+thread_local = { version = "1", optional = true }
+
+[dev-dependencies]
+futures = "0.3"
+static_assertions = "1"
